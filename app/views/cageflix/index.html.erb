@@ -2,6 +2,6 @@
 
 
 <% @movie.each do |movie| %>
-<li><h3><%= movie.name %></h3><%= movie.year %> </li>
+<li><h3><%= movie.name %></h3>(<%= movie.year %>)</li>
  <li><%= movie.synopsis %></li>
 <% end %>
