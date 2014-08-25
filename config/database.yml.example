@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: gschool
+  pool: 5
+
+development:
+  <<: *default
+  database: g3-assessment-week-12-development
+
+test:
+  <<: *default
+  database: g3-assessment-week-12-test

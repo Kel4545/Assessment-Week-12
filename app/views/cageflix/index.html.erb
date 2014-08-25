@@ -1,0 +1,7 @@
+<%= link_to 'Add Movie', new_movie_path, :method => :get %>
+
+
+<% @movie.each do |movie| %>
+<li><h3><%= movie.name %></h3><%= movie.year %> </li>
+ <li><%= movie.synopsis %></li>
+<% end %>

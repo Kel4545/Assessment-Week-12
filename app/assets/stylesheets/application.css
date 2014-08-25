@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+    font-family: "Comic Sans MS"
+}
+
+li {
+    list-style: none
+
+}
+
+.errors {
+    color: red
+}
+
+h3 {
+    font-weight: bold
+}
+

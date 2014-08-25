@@ -1,0 +1,26 @@
+<%= form_for @movie, url: movies_path do |f| %>
+
+  <% if @movie.errors.any? %>
+    <ul class="errors">
+    <% @movie.errors.messages[:name].each do |error| %>
+     <li> <%= error %></li>
+    <% end %>
+  <% end %>
+  <% if @movie.errors.any? %>
+    <% @movie.errors.messages[:year].each do |error| %>
+    <li><%= error %></li>
+    <% end %>
+  <% end %>
+  </ul>
+
+  <li><%= f.label :name %>
+    <%= f.text_field :name, autofocus: true %>
+
+   <li><%= f.label :year %>
+    <%= f.text_field :year, autofocus: true %></li>
+
+   <li><%= f.label :synopsis %>
+    <%= f.text_field :synopsis, :cols => 30, :rows => 10, autofocus: true %></li>
+    <%= f. submit "Create Movie" %>
+<% end %>
+
